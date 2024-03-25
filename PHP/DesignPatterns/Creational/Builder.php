@@ -1,14 +1,19 @@
 <?php
 
+/*---------------------------------------------- Definition ----------------------------------------------------
+Builder is a creational design pattern that lets you construct complex objects step by step. The pattern allows 
+you to produce different types and representations of an object using the same construction code.
+Reference - https://refactoring.guru/design-patterns/builder
+---------------------------------------------------------------------------------------------------------------*/
 interface ProductBuilder {
-	public function createProduct();
+	public function createProduct( $product );
 	public function setName( $name );
 	public function setQuantity( $quantity );
 	public function setCost( $cost );
 	public function getProduct();
 }
 
-class ConcreteBuilder {
+class ConcreteBuilder implements ProductBuilder {
 
 	protected $product;
 
@@ -45,6 +50,8 @@ class LaptopProduct {
 	public $cost;
 }
 
+/* Product director->buildProduct() is common construction code which is used to produce 
+different types and representations of an object  */
 class ProductDirector {
 	private $director;
 

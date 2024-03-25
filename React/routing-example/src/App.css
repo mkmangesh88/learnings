@@ -1,0 +1,78 @@
+body {
+  background-color: rgb(186, 175, 190);
+}
+
+.App-header {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(40, 83, 85);
+  color: aliceblue;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: blueviolet;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 45px;
+}
+
+.content > button {
+  padding: 10px 0px;
+  width:fit-content;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: aquamarine;
+}
+
+.content > input {
+  justify-content: center;
+  line-height: 20px;
+  display: flex;
+  width: fit-content;
+  margin: 10px;
+}
+
+.login-box {
+  background-color: rgb(75, 86, 87);
+  padding: 45px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 60px 360px;
+  
+}
+
+.login-box > input {
+  line-height: 35px;
+  margin: 10px;
+  background-color: rgb(154, 170, 170);
+  border-radius: 20px;
+}
+
+.login-box > button {
+  padding: 10px 0px;
+  width:auto;
+  border-radius: 20px;
+  background-color: aquamarine;
+}

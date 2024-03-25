@@ -1,5 +1,10 @@
 <?php
 
+/*---------------------------------------------- Definition ----------------------------------------------------
+Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing
+ a global access point to this instance.
+ Reference - https://refactoring.guru/design-patterns/singleton
+---------------------------------------------------------------------------------------------------------------*/
 class Singleton {
 
 	private static $instance;
@@ -16,10 +21,6 @@ class Singleton {
 		}
 
 		return Singleton::$instance;
-	}
-
-	public static function getVariables() {
-		return $this->variable;
 	}
 }
 

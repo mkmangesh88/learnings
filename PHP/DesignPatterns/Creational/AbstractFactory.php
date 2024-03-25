@@ -1,17 +1,20 @@
 <?php
-/* Interfaces */
+
+/*---------------------------------------------- Definition ----------------------------------------------------
+Abstract Factory is a creational design pattern that lets you produce families of related objects without 
+specifying their concrete classes.
+Reference - https://refactoring.guru/design-patterns/abstract-factory
+---------------------------------------------------------------------------------------------------------------*/
 
 interface VehicleFactory {
 	public function createCar( $seats = 0, $model = '' );
 	public function createTruck( $length = 0, $tireCount = 0 );
 }
 
-
 interface Car {
 	public function getSeats();
 	public function getModel();
 }
-
 
 interface Truck {
 	public function getLength();
@@ -19,7 +22,7 @@ interface Truck {
 }
 
 
-/* Car implement */
+/* Car implement -- Concrete classes*/
 
 class SUV implements Car {
 
@@ -58,7 +61,7 @@ class Sedan implements Car {
 	}
 }
 
-/* Truck implement */
+/* Truck implement -- Concrete classes */
 
 class VintageTruck implements Truck {
 	protected $intLength;
@@ -74,7 +77,7 @@ class VintageTruck implements Truck {
 	}
 
 	public function getTireCount() {
-		return $this->strTireCount;
+		return $this->intTireCount;
 	}
 }
 
@@ -92,7 +95,7 @@ class ModernTruck implements Truck {
 	}
 
 	public function getTireCount() {
-		return $this->strTireCount;
+		return $this->intTireCount;
 	}
 }
 

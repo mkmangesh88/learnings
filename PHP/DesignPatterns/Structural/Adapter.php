@@ -1,5 +1,9 @@
 <?php
 
+/*---------------------------------------------- Definition ----------------------------------------------------
+Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.
+ Reference - https://refactoring.guru/design-patterns/adapter
+---------------------------------------------------------------------------------------------------------------*/
 class Book {
 	protected $name;
 	protected $author;
@@ -18,6 +22,7 @@ class Book {
 	}
 }
 
+/* Adapter class took input as object of class and returning a String */
 Class Adapter {
 
 	protected $instanceBook;
